@@ -71,3 +71,24 @@ body {
     line-height: 49px;  
     color: #FFFFFF;
 }
+
+.section_white {
+    background-color: #fff;
+    text-align: center;
+    width: 696px;
+    height: 246px;
+    padding: 134px 0;
+}
+
+.black_text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+
+
+.input {
+    width: 647px;
+    height: 96px;
+}
