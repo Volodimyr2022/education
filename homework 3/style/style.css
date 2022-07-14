@@ -86,9 +86,52 @@ body {
     line-height: 42px;
 }
 
+.form-section {
+    max-width: 647px;
+    margin: 63px auto 100px;
+    
+}
 
+.input_wraper {
+   position: relative;
+   margin-bottom: 41px;
+}
 
 .input {
-    width: 647px;
+    width: 100%;
     height: 96px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 36px 0 11px 34px;
+    box-sizing: border-box;
+}
+
+.label {
+    position: absolute;
+    left: 33px;
+    top: 14px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+
+}
+
+.input::placeholder {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+
+}
+
+.form_button {
+    width: 100%;
+    height: 92px;
+    background: #5C98AB;
+    font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+color: #FFFFFF;
+
 }
