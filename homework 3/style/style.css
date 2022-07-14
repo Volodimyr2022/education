@@ -59,7 +59,7 @@ body {
 }
 
 .description {
-    background-color: rgba(26, 110, 136, 0.71););
+    background-color: rgba(26, 110, 136, 0.71);
     padding: 134px 0;
 }
 
@@ -70,7 +70,19 @@ body {
     font-size: 36px;
     line-height: 49px;  
     color: #FFFFFF;
+    position: relative;
 }
+
+.description_text::before {
+    content: ' ';
+    width: 178px;
+    height: 121px;
+    background: #BFDEFB;
+    position: absolute;
+    bottom: -264px;
+    left: -370px;
+}
+
 
 .section_white {
     background-color: #fff;
@@ -84,7 +96,51 @@ body {
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
+    position: relative;
 }
+
+.up_position::before {
+    content: ' ';
+    width: 178px;
+    height: 121px;
+    background: #BFDEFB;
+    position: absolute;
+    top: 125px;
+    left: -364px;
+}
+
+.up_position::after {
+    content: ' ';
+    width: 178px;
+    height: 121px;
+    background: #BFDEFB;
+    position: absolute;
+    top: 0;
+    right: -380px;
+}
+
+.bottom_position::before {
+    content: ' ';
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #5C98AB;
+    top: -58px;
+    left: -58px;
+}
+
+.bottom_position::after {
+    content: ' ';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #BFDEFBAB;
+    bottom: -60px;
+    right: -152px;
+}
+
 
 .form-section {
     max-width: 647px;
@@ -104,6 +160,7 @@ body {
     border-radius: 4px;
     padding: 36px 0 11px 34px;
     box-sizing: border-box;
+    
 }
 
 .label {
@@ -117,7 +174,7 @@ body {
 
 }
 
-.input::placeholder {
+.input::placeholder, .input {
     font-weight: 400;
     font-size: 36px;
     line-height: 49px;
