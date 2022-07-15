@@ -77,12 +77,12 @@ body {
 
 
 .section_whiteup {
-   margin: 221px 330px 216px 364px ;
+   margin: 221px 0 216px ;
    position: relative;
 }
 
 .section_whitebottom {
-    margin: 0 384px 123px 360px ;
+    margin-bottom: 123px ;
     position: relative;
  }
 
@@ -101,9 +101,9 @@ body {
     width: 178px;
     height: 121px;
     background: #BFDEFB;
-    position: relativ;
-    top: -121px;
-    left: 0 ;
+    position: absolute;
+    top: -121px ;
+    left: 0px ;
 }
 
 .object_leftbottom{
