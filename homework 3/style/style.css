@@ -7,6 +7,7 @@ body {
     margin: 0 auto;
 }
 
+
 .background {
     background-image: url(../img/background.png);
     text-align: center;
@@ -95,35 +96,35 @@ body {
     position: relative;
 }
 
-.object_leftup::before{
+.object_leftup {
     content: ' ';
     width: 178px;
     height: 121px;
     background: #BFDEFB;
-    position: absolute;
+    position: relativ;
     top: -121px;
-    left: -364px;
+    left: 0 ;
 }
 
-.object_leftbottom::before{
+.object_leftbottom{
     content: ' ';
     width: 178px;
     height: 121px;
     background: #BFDEFB;
     position: absolute;
     top: 121px;
-    left: -364px;
+    left: 0 ;
 }
 
 
-.object_right::after{
+.object_right{
     content: ' ';
     width: 178px;
     height: 121px;
     background: #BFDEFB;
     position: absolute;
     top: 14px; 
-    right: -326px;  
+    right: 0 ;  
 
 }
    
