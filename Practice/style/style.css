@@ -1,3 +1,7 @@
+body{
+    font-family: 'Work Sans', sans-serif; 
+}
+
 .header {
     background-color: #F3C6BD;
     padding: 46px 0 71px;
@@ -23,23 +27,20 @@
     font-size: 20px;
     line-height: 25px;
     color: #2B292D;
-    font-family: 'Work Sans', sans-serif;
-
+   
 }
 
 .logo_text {
     font-size: 18px;
     line-height: 25px;
     color: #2B292D;
-    font-family: 'Work Sans', sans-serif;
-
+   
 }
 
 .header_link {
     font-size: 18px;
     line-height: 25px;
     color: #2B292D;
-    font-family: 'Work Sans', sans-serif;
     text-decoration: none;
     position: relative;
 
@@ -74,7 +75,6 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
     border: none;
     border-radius: 2px;
-    font-family: 'WorkSans';
     font-size: 18px;
     line-height: 13px;
     color: #FFFFFF;
@@ -87,3 +87,56 @@
     cursor: pointer;
 }
 
+.section{
+    background: #F4F5F7;
+    padding: 77px 0 76px;
+}
+
+.section_title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.section_text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.section_img{
+    width: 1139.77px;
+    height: 75px;
+    margin-top: 30px;
+
+}
+
+.TNYT_img{
+    width: 104.93px;
+    height: 75px;
+}
+
+.forbes_img{
+    width: 110.82px;
+    height: 30px;
+}
+
+.apple_img{
+    width: 43.46px;
+    height: 50px;
+}
+
+.mashable_img{
+    width: 153px;
+    height: 26px;
+}
+
+.WSJ_img{
+    width: 76.15px;
+    height: 43px;
+}
+
+.google_img{
+    width: 126.77px;
+    height: 41.55px;
+}
