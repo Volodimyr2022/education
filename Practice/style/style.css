@@ -50,7 +50,7 @@ body{
     margin-right: 77px;
 }
 
-.header_li:not(last-of-type){
+.header_li:not(:last-of-type){
     margin-right: 30px;;
 }
 
@@ -113,32 +113,4 @@ body{
 
 }
 
-.TNYT_img{
-    width: 104.93px;
-    height: 75px;
-}
 
-.forbes_img{
-    width: 110.82px;
-    height: 30px;
-}
-
-.apple_img{
-    width: 43.46px;
-    height: 50px;
-}
-
-.mashable_img{
-    width: 153px;
-    height: 26px;
-}
-
-.WSJ_img{
-    width: 76.15px;
-    height: 43px;
-}
-
-.google_img{
-    width: 126.77px;
-    height: 41.55px;
-}
