@@ -208,7 +208,7 @@ color: #2B292D;
     height: 3px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #16afdd;
     bottom: 33px;
-
+    left: 0;
 } 
 
 .picture_item{
@@ -223,7 +223,8 @@ color: #2B292D;
 
 .picture_item:hover{
     background: #3141C5;
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    transition: 0,5s; 
 }
 
 
