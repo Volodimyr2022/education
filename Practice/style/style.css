@@ -340,8 +340,8 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 347px);
-    grid-template-rows: repeat(3, 208px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 49px 42px;
 }
 
