@@ -93,34 +93,27 @@ body{
     cursor: pointer;
 }
 
-.section{
+.information{
     background: #F4F5F7;
     padding: 77px 0 76px;
 }
+.information_text-normal{
+    font-weight: 400;
+}
 
-.section_title{
+.information_text{
+    max-width: 555px;
     font-weight: 700;
     font-size: 22px;
     line-height: 32px;
 }
-
-.section_text{
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
+.grid_image{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 105px;
+    align-items: center;
 }
-
-
-
-.section_img{
-    margin: 30px auto 117px;
-    width: 1139.77px;
-    height: 75px;
-
-}
-
 .template_pretitle{
-    margin: 108px auto 24px;
     font-size: 22px;
     line-height: 34px;
     text-align: center;
@@ -211,7 +204,7 @@ body{
 }
 
 .phone{
-        margin: 110px auto 105px;
+        pudding: 110px 0 105px;
 }
 
 .phone_text{
@@ -257,7 +250,6 @@ body{
 .template_text{
     margin: 0 auto 97px;
     width: 554px;
-    height: 68px;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
@@ -272,7 +264,7 @@ body{
 .picture_button{
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 111px;
        
 }
 
@@ -291,20 +283,15 @@ body{
 }
   
 
-.picture_block{
+.grid_picture{
     display: grid;
-    grid-template-columns: repeat(4, 262px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     justify-content: center;
-    margin: 111px auto 110px; 
-   }
-
-.picture_image{
-    padding-top: 22px;
-   
 }
-
-
+.picture_image{
+    padding-top: 22px; 
+}
 .picture_text{
     font-weight: 700;
     font-size: 22px;
@@ -346,7 +333,10 @@ body{
     grid-template-rows: repeat(3, 1fr);
     gap: 49px 42px;
 }
-
+.grid_img{
+    width: 100%;
+    height: 100%;
+}
 .item:nth-child(3), .item:nth-child(4){
     grid-row: span 2;
 }
@@ -355,20 +345,38 @@ body{
     .container{
         max-width: 750px;
     } 
-    .logo_text{
-        display: none;
-    }
-
     .header_nav{
         display: none;
+    }
+    .flex_information-column{
+        flex-direction: column;
+    }
+    .grid_image{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 620px;
+        margin: 25px auto 41px;
+        align-items: center;
+        justify-items: center;
+        gap: 37px 120px;
     }
     .flex_inbox-column{
         flex-direction: column-reverse;
     }
     .flex_phone-column{
         flex-direction: column;
+        }
+    .information{
+        padding: 30px 0 34px;
     }
-
+    .information_text{
+        max-width: 432px;
+        width: 100%;
+    }
+    .information_text-right{
+        margin-top: 40px;
+    }
     .inbox{
         padding: 56px 0 69px;
     }
@@ -387,6 +395,31 @@ body{
         font-size: 20px;
         line-height: 26px;
     }
+    .template_pretitle{
+        margin-top: 50px;
+    }
+    .template_title{
+        max-width: 413px;
+        margin: 27px auto 27px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .template_text{
+        max-width: 466px;
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .picture_button{
+        margin-bottom: 52px;
+    }
+    .grid_picture{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 64px 60px;
+        justify-content: center;
+    }
     .inbox_response{
         margin: 0 auto 75px;
         text-align: start;
@@ -395,8 +428,7 @@ body{
         display: none;
     }
     .phone{
-        
-        margin: 73px auto 38px;
+        pudding: 73px 0 38px;
     }
     .phone_text{
         max-width: 322px;
@@ -406,9 +438,25 @@ body{
     .container-image_img{
         margin-top: 41px;
     }
-    
-
-
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 29px 45px;
+    }
+   .grid_img:nth-child(2){
+    grid-row: 4/5;
+    grid-column: 2/3;
+   }
+   .grid_img:nth-child(3){
+        grid-column: 2/3;
+        grid-row: 1/3;
+   }
+   .grid_img:nth-child(4){
+        grid-row: 2/4;
+   }
+   .grid_img:nth-child(7){
+    display: none;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -424,7 +472,17 @@ body{
     .logo img {
         margin-right: 13px;
      }
-
+     .information{
+        padding: 46px 15px;
+    }
+    .information_text{
+        max-width: 290px;
+        width: 100%;
+    }
+    .information_text-right{
+        margin-top: 20px;
+    }
+    
      .flex_inbox-column{
         flex-direction: column;
     }
@@ -435,6 +493,10 @@ body{
     .container-image{    
         margin-bottom: 32px;
     }
+    .grid_image{
+        gap: 0;
+    }
+        
     .inbox{
         padding: 50px 0 48px;
     }
@@ -458,22 +520,69 @@ body{
     .inbox_response{
         padding: 30px 20px;
     }
-    .section{
-        display: none;
-    }
+   
     .flex_phone-column{
         flex-direction: column;
     }
     .flex_phonetext-column{
         flex-direction: column;
     }
-    .image{
-        display: none;
-    }
+   
     .picture{
+        padding: 50px 15px;
+    }
+    .container_picture{
+        max-width: 290px;
+        width: 100%;
+    }
+    .picture_item{
+        min-width: 290px;
+        width: 100%;
+    }
+    .template_pretitle{
+        max-width: 290px;
+        width: 100%;
+    }
+    .template_title{
+        max-width: 290px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .template_text{
+        max-width: 290px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .picture_button{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        max-width: 290px;
+        width: 100%;
+        margin: 50px auto 12px;
+    }
+    .white_button{max-width: 290px;
+        width: 100%;
+        margin-bottom;: 40px
+
+    }
+    .grid_picture{
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(4,1fr);
+       gap: 15px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 17px;
+    }
+    .grid_img:nth-child(2){
         display: none;
     }
-    .photo{
+    .grid_img:nth-child(7){
         display: none;
     }
 }
