@@ -211,9 +211,7 @@ body{
 }
 
 .phone{
-    width: 1144px;
-    height: 646px;
-    margin: 110px auto 105px;
+        margin: 110px auto 105px;
 }
 
 .phone_text{
@@ -231,6 +229,10 @@ body{
 .phone_text-violet{
     color:rgb(97, 66, 198);
     text-decoration: underline;
+}
+
+.container-image{
+    margin-bottom: 105px;
 }
 
 .section_photo{
@@ -380,6 +382,7 @@ body{
     }
     .pattern_text{
         max-width: 429px;
+        width: 100%;
         margin: 0 auto 41px;
         font-size: 20px;
         line-height: 26px;
@@ -392,9 +395,8 @@ body{
         display: none;
     }
     .phone{
-        width: 740px;
-        height: 972px;
-        margin: 73px 342px 38px 8px;
+        
+        margin: 73px auto 38px;
     }
     .phone_text{
         max-width: 322px;
@@ -459,13 +461,13 @@ body{
     .section{
         display: none;
     }
-
-    .image{
-        display: none;
+    .flex_phone-column{
+        flex-direction: column;
     }
-
-    
-    .phone{
+    .flex_phonetext-column{
+        flex-direction: column;
+    }
+    .image{
         display: none;
     }
     .picture{
