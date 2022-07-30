@@ -335,10 +335,10 @@ body{
     grid-row: span 2;
 }
 .free{
-    padding: 72px 200px;
+    padding: 72px 180px;
 }
 .free_img{
-    margin-right: 122px;
+    margin-right: 100px;
 }
 .free_title{
     width: 555px;
@@ -374,8 +374,59 @@ body{
     color: rgba(43, 41, 45, 0.6);
     position: relative;
 }
-
-.free_input{
+.fake{
+    width: 20px;
+    height: 20px;
+    border: 2px solid green;
+    border-radius: 25%;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+/* .fake::before{
+    content: '';
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+} */
+.fake::before{
+    content: '';
+    position:absolute;
+    width: 10px;
+    height: 2px;
+    background-color: red;
+    left: 10%;
+    top: 50%;
+    opacity: 0;
+    transform: rotate(45deg);
+} 
+.fake::after{
+    content: '';
+    position:absolute;
+    width: 10px;
+    height: 2px;
+    background-color: red;
+    right: 10%;
+    top: 50%;
+    opacity: 0;
+    transform: rotate(-45deg);
+} 
+.checkbox:checked ~ .fake::before, ~ .fake::after{
+    opacity: 1;
+    transition: 1s;
+}
+.checkbox{
+    opacity: 0;
+}
+.agree_text{
+    color: #3141C5;
+    font-size: 20px;
+    line-height: 13px;
     margin-right: 20px;
 }
 
