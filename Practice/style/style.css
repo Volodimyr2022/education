@@ -26,16 +26,9 @@ body{
    margin-right: 15px;
 }
 
-.logo_title {
+.logo_text {
     font-weight: 700;
     font-size: 20px;
-    line-height: 25px;
-    color: #2B292D;
-   
-}
-
-.logo_text {
-    font-size: 18px;
     line-height: 25px;
     color: #2B292D;
    
@@ -110,7 +103,7 @@ body{
 .grid_image{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 105px;
+   justify-items: center;
     align-items: center;
 }
 .template_pretitle{
@@ -332,6 +325,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 49px 42px;
+    margin-bottom: 91px;
 }
 .item_photo{
     width: 100%;
@@ -339,6 +333,50 @@ body{
 }
 .item:nth-child(3), .item:nth-child(4){
     grid-row: span 2;
+}
+.free{
+    padding: 72px 200px;
+}
+.free_img{
+    margin-right: 122px;
+}
+.free_title{
+    width: 555px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    color: #2B292D;
+    padding-bottom: 12px;
+    
+}
+
+.free_text{
+    width: 555px;
+    height: 64px;
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 26px;
+    
+}
+
+.free_email{
+    width: 385px;
+    height: 48px;
+    box-sizing: border-box;
+    margin: 0 10px 10px 0;
+}
+
+.free_check{
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+    position: relative;
+}
+
+.free_input{
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 1090px) {
@@ -495,8 +533,12 @@ body{
     }
     .grid_image{
         gap: 0;
+        max-width: 290px;
+        width: 100%;
     }
-        
+    .apple_img{
+        max-width: 100%;
+    }
     .inbox{
         padding: 50px 0 48px;
     }
