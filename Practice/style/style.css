@@ -66,7 +66,7 @@ body{
 }
 
 
-.button{
+button{
     width: 160px;
     height: 48px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
@@ -79,11 +79,12 @@ body{
     position: relative;
 }
 
-
-.button:hover{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #1b30ed;
-    transition: 1s;
-    cursor: pointer;
+button:hover{
+    background: yellow;
+    color: black;
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .information{
@@ -221,6 +222,84 @@ body{
     margin-bottom: 105px;
 }
 
+.container-image_phone{
+    position: relative;
+    animation-name: phone;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes phone{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.502);
+        }
+    100%{
+        bottom: 60px;
+        background-color: black;
+    }
+
+}
+
+
+
+.container-image_rotator{
+    position: relative;
+    animation-name: rotator;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.container-image_rotator:hover{
+    animation-play-state: paused;
+}
+
+@keyframes rotator{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 20px;;
+        bottom: 20px;
+        background-color: red;
+    }
+    20%{
+       left: 40px;
+       bottom: 40px;
+       background-color: orange;
+    }
+    30%{
+        left: 20px;
+        bottom: 60px;
+        background-color: yellow;
+        }
+    40%{
+        left: 0;
+        bottom: 80px;
+        background-color: green;
+    }
+    60%{
+        right: 20px;
+        bottom: 60px;
+        background-color: blue;
+    }
+    80%{
+        right: 40px;
+        bottom: 40px;
+        background-color: indigo;
+    }
+    100%{
+        right: 20px;
+        bottom: 10px;
+        background-color: violet;
+    }
+}
+
 .section_photo{
     margin: 0 auto 26px;
     font-weight: 700;
@@ -275,6 +354,14 @@ body{
     margin-left: 10px;
 }
   
+.white_button:hover{
+    height: 55px;
+    background-color: rgb(13, 240, 13);
+    color: red;
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955)    
+}
 
 .grid_picture{
     display: grid;
@@ -575,7 +662,7 @@ body{
      .flex_inbox-column{
         flex-direction: column;
     }
-    .container-image_img{
+    .container-image_rotator{
         max-width: 290px;
         width: 100%;
     }
