@@ -225,26 +225,25 @@ button:hover{
 .container-image_phone{
     position: relative;
     animation-name: phone;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes phone{
     0%{
-        bottom: 0;
+       transform: rotate(0deg);
     }
     50%{
-        bottom: 30px;
-        background-color: rgba(0, 0, 0, 0.502);
+        transform: rotate(15deg);
         }
     100%{
-        bottom: 60px;
-        background-color: black;
+        transform: rotate(0deg);
     }
-
 }
-
+.container-image_phone:hover{
+    animation-play-state: paused;
+}
 
 
 .container-image_rotator{
@@ -293,13 +292,12 @@ button:hover{
         bottom: 40px;
         background-color: indigo;
     }
-    100%{
+    0%{
         right: 20px;
         bottom: 10px;
         background-color: violet;
     }
 }
-
 .section_photo{
     margin: 0 auto 26px;
     font-weight: 700;
@@ -470,45 +468,31 @@ button:hover{
     margin-right: 10px;
     position: relative;
 }
-/* .fake::before{
+.fake::after, .fake::before{
     content: '';
     position:absolute;
     width: 10px;
-    height: 10px;
+    height: 2px;
     background-color: red;
-    left: 50%;
     top: 50%;
     opacity: 0;
-    transform: translate(-50%, -50%);
-} */
+} 
 .fake::before{
-    content: '';
-    position:absolute;
-    width: 10px;
-    height: 2px;
-    background-color: red;
     left: 10%;
-    top: 50%;
-    opacity: 0;
     transform: rotate(45deg);
-} 
+}
 .fake::after{
-    content: '';
-    position:absolute;
-    width: 10px;
-    height: 2px;
-    background-color: red;
     right: 10%;
-    top: 50%;
-    opacity: 0;
     transform: rotate(-45deg);
-} 
-.checkbox:checked ~ .fake::before, ~ .fake::after{
+}
+.checkbox:checked ~ .fake::before, .checkbox:checked ~ .fake::after{
     opacity: 1;
     transition: 1s;
 }
 .checkbox{
     opacity: 0;
+    position:absolute;
+    z-index: 1;
 }
 .agree_text{
     color: #3141C5;
@@ -666,6 +650,7 @@ button:hover{
         max-width: 290px;
         width: 100%;
     }
+    https://t.me/animate_css
     .container-image{    
         margin-bottom: 32px;
     }
