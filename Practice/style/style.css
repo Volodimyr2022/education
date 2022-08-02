@@ -505,8 +505,75 @@ button:hover{
     .container{
         max-width: 750px;
     } 
-    .header_nav{
+    /* .header_nav{
         display: none;
+    } */
+
+    .check{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+    }
+    .check:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    .checkbox, .check-wraper{
+        display: block;
+    }
+    .menu-all{
+        display: none;
+    }
+    .menu{
+        position: relative;
+    }
+    .checkbox_header{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        opacity: 0;   
+        z-index: 2;  
+    }
+    .check{
+        transition: 300ms;
+    }
+    .checkbox_header:checked ~ .check-wrapper > .check:first-of-type{
+        transform: rotate(45deg) translate(10px, 10px);   
+    }
+    .checkbox_header:checked ~ .check-wrapper > .check:nth-child(2){
+        opacity: 0;   
+    }
+    .checkbox_header:checked ~ .check-wrapper > .check:last-of-type{
+        transform: rotate(-45deg) translate(0px, 3px);   
+    }
+    .header_ul{
+        margin-right: 0px;
+    }
+    .header_li:not(:last-of-type){
+        margin-right: 0px;
+    }
+    .header_li{
+        margin-bottom: 20px;
+    }
+    .checkbox_header:checked ~ .menu-all{
+        position: fixed;
+        display: block;
+        background-color: beige;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .flex_menu{
+        flex-direction: column;
+    }
+    .check-wrapper{
+        position: relative;
+        z-index: 1;
     }
     .flex_information-column{
         flex-direction: column;
@@ -650,7 +717,6 @@ button:hover{
         max-width: 290px;
         width: 100%;
     }
-    https://t.me/animate_css
     .container-image{    
         margin-bottom: 32px;
     }
