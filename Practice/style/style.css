@@ -444,6 +444,9 @@ button:hover{
 .item:nth-child(3), .item:nth-child(4){
     grid-row: span 2;
 }
+.hiring{
+    margin-bottom: 90px;
+}
 .hiring_title{
     margin: 0 auto 20px;
     font-weight: 700;
@@ -461,12 +464,20 @@ button:hover{
     text-align: center;
     color: #2B292D;
     max-width: 555px;
-
 }
 .hiring_button{
     width: 247px;
     margin: 0 auto 86px;
-    
+}
+.hiring-rotate-icon{
+    rotate: 90deg;
+    transition: 300ms;
+}
+.change_color{
+    color: white;
+    background-color: #3040C4;
+    border: 2px solid #3040C4;
+    transition: 300ms;
 }
 .button_long{
     width: 247px;
@@ -585,10 +596,7 @@ button:hover{
     margin-right: 20px;
 }
 footer{
-       padding: 43px 130px 15px;
-}
-.footer .container{
- margin: 0;
+       padding: 43px 0 15px;
 }
 .footer_nav{
     margin-bottom: 59px;
