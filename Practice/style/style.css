@@ -19,7 +19,6 @@ body{
 .flex_start{
     justify-content: flex-start;
 }
-
 .logo img {
    margin-right: 15px;
 }
@@ -445,6 +444,62 @@ button:hover{
 .item:nth-child(3), .item:nth-child(4){
     grid-row: span 2;
 }
+.hiring_title{
+    margin: 0 auto 20px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #2B292D;
+}
+.hiring_text{
+    margin: 0 auto 28px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #2B292D;
+    max-width: 555px;
+
+}
+.hiring_button{
+    width: 247px;
+    margin: 0 auto 86px;
+    
+}
+.button_long{
+    width: 247px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 13px;
+    color: #FFFFFF;
+    font-weight: 700;
+    position: relative;
+}
+.hiring_items{
+    max-width: 750px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    padding: 26px 25px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 8px;
+}
+.hiring_ittext{
+    margin-bottom: 3px;
+    max-width: 410px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    display: none;
+}
+.hiring_pretitle{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+}
 .free{
     padding: 72px 180px;
 }
@@ -532,6 +587,13 @@ button:hover{
 footer{
        padding: 43px 130px 15px;
 }
+.footer .container{
+ margin: 0;
+}
+.footer_nav{
+    margin-bottom: 59px;
+    position: relative;
+}
 .flex_footer-column{
     flex-direction: column;
 }
@@ -567,9 +629,21 @@ footer{
     height: 185px;
 }
 .footer_media{
-    margin-top: 73px;
+    padding: 15px 0;
 }
-
+.footer_media-li:not(:last-of-type){
+    margin-right: 10px;
+}
+.footer_img:not(:last-of-type){
+    margin-right: 10px;
+}
+.line{
+    height: 2px;
+    background: #2B292D;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    margin-top: 59px;
+}
 @media screen and (max-width: 1090px) {
     .container{
         max-width: 750px;
