@@ -612,14 +612,16 @@ footer{
     display: flex;
     justify-content: start;
     text-align: start;
-}
+    margin-bottom: 26px;  
+} 
 .footer_text{
     width: 360px;
-    height: 85px;`
+    height: 85px;
     font-size: 18px;
     line-height: 26px;
     color: rgba(43, 41, 45, 0.6);
     text-align: start;
+    margin-bottom: 25px;
 }
 .footer_link-li{
     margin-right: 10px;
@@ -636,6 +638,9 @@ footer{
     width: 265px;
     height: 185px;
 }
+.footer_li{
+    margin-bottom: 15px;
+}
 .footer_media{
     padding: 15px 0;
 }
@@ -650,7 +655,6 @@ footer{
     background: #2B292D;
     mix-blend-mode: normal;
     opacity: 0.1;
-    margin-top: 59px;
 }
 @media screen and (max-width: 1090px) {
     .container{
@@ -850,15 +854,15 @@ footer{
         flex-direction: column-reverse;
     }
     .free_title{
-        width: 325px;
+        max-width: 325px;
         height: 78px;
         font-weight: 700;
         font-size: 48px;
         line-height: 40px;
         text-align: center;
         letter-spacing: -0.357143px;
-        color: #2B292D;   
-        margin: 0px; 
+        color: #2B292D;
+        margin-bottom: 51px;   
     }
     .free_text{
         width: 590px;
@@ -874,6 +878,45 @@ footer{
         width: 431px;
         height: 43px; 
         margin-bottom: 13px;
+    }
+    .footer {
+        max-width: 343px;
+        margin: 49px auto 47px;
+    }
+    .footer_text{
+        display: none;
+    }
+    
+    .flex_logo{
+        display: block;
+        text-align: center;
+    }
+    .footer_link{
+        max-width: 297px;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    .logo_text{
+        max-width: 343px;
+    }
+    
+     .flex_nav-column{
+        flex-direction: column;
+    }
+     .flex_media-column{
+        flex-direction: column;
+    }
+    .footer_media .flex{
+        justify-content: start;
+    }
+    .footer_media-ul{
+        margin-bottom: 28px;
+    }
+    .footer_nav{
+        margin-bottom: 0;
+    }
+    .line{
+        display: none;
     }
 }
 
@@ -1088,5 +1131,11 @@ footer{
     }
     .free_img{
         margin: 50px auto 40px;
+    }
+    .footer_nav{
+        margin-bottom: 0;
+    }
+    .line{
+        display: none;
     }
 }
