@@ -137,14 +137,16 @@ button:hover{
 }
 .find{
     margin-bottom: 103px;
-}
-.find_main{
     position: relative;
 }
+/* .find_main{
+    
+} */
 .find_items{
     max-width: 457px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    border-bottom: 1px solid #000;
 }
 .find_img{
     margin-right: 20px;
@@ -158,10 +160,10 @@ button:hover{
 }
 .change_color-find{
     color: #3142C6;
+    border-bottom: 3px solid #3142C6;
 }
-.find_pretitle-line{
-    height: 2px;
-    background-color: grey;
+.change_color-line{
+    
 }
 .find_block{
     max-width: 459px;
@@ -175,19 +177,19 @@ button:hover{
     color: #2B292D;
     margin-top: 8px;
 }
-.find_block-line{
+/* .find_block-line{
     height: 3px;
     background-color: #3142C6;
     margin-top: 20px;
-}
+} */
 .left_img{
     position: absolute;
-    left: -136px;
+    left: 0;
     top:50%
 }
 .right_img{
     position: absolute;
-    right: -136px;
+    right: 0;
     top: 0;
 }
 .template_pretitle{
