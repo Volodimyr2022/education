@@ -718,6 +718,34 @@ footer{
     mix-blend-mode: normal;
     opacity: 0.1;
 }
+.modal-overlay{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.modal{
+    max-width: 550px;
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
 @media screen and (max-width: 1090px) {
     .container{
         max-width: 750px;
