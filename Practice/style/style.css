@@ -61,7 +61,9 @@ body{
     bottom: 0;
 
 }
-
+.checkbox_header, .check-wrapper{
+    display: none;
+}
 
 button{
     width: 160px;
@@ -720,8 +722,8 @@ footer{
     text-align: start;
     margin-bottom: 25px;
 }
-.footer_link-li{
-    margin-right: 10px;
+.footer_link-img{
+    margin-right: 5px;
 }
 .product_text{
     font-size: 22px;
@@ -741,9 +743,9 @@ footer{
 .footer_media{
     padding: 15px 0;
 }
-.footer_media-li:not(:last-of-type){
+/* .footer_media-li:not(:last-of-type){
     margin-right: 10px;
-}
+} */
 .footer_img:not(:last-of-type){
     margin-right: 10px;
 }
@@ -797,7 +799,7 @@ footer{
     .check:not(:last-of-type){
         margin-bottom: 3px;
     }
-    .checkbox, .check-wraper{
+    .checkbox_header, .check-wrapper{
         display: block;
     }
     .menu-all{
@@ -1024,22 +1026,22 @@ footer{
     .logo_text{
         max-width: 343px;
     }
-    
-     .flex_nav-column{
+    .flex_nav-column{
         flex-direction: column;
     }
      .flex_media-column{
         flex-direction: column;
     }
-    .footer_media .flex{
-        justify-content: start;
+    .footer .flex{
+        display: block;
     }
-    .footer_media-ul{
+    .footer_mar{
         margin-bottom: 28px;
     }
     .footer_nav{
         margin-bottom: 0;
     }
+    
     .line{
         display: none;
     }
@@ -1259,6 +1261,10 @@ footer{
     }
     .footer_nav{
         margin-bottom: 0;
+    }
+    .footer_store{
+        margin: 31px auto 40px;
+        text-align: center;
     }
     .line{
         display: none;
