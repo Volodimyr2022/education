@@ -179,15 +179,10 @@ button:hover{
     color: #2B292D;
     margin-top: 8px;
 }
-/* .find_block-line{
-    height: 3px;
-    background-color: #3142C6;
-    margin-top: 20px;
-} */
 .left_img{
     position: absolute;
     left: 0;
-    top:50%
+    top: 248px;
 }
 .right_img{
     position: absolute;
@@ -605,10 +600,15 @@ button:hover{
     line-height: 26px;
     display: none;
 }
-.hiring_pretitle{
+.hiring_items-pretitle{
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
+}
+.hiring_items-text{
+    font-size: 18px;
+    line-height: 24px;
+    rgba(43, 41, 45, 0.6)
 }
 .free{
     padding: 72px 180px;
@@ -895,6 +895,11 @@ footer{
         justify-items: center;
         gap: 37px 120px;
     }
+    .right_img{
+        position: static;
+        left: 0;
+        top: 0;
+    }
     .flex_inbox-column{
         flex-direction: column-reverse;
     }
@@ -1120,8 +1125,14 @@ footer{
     .information_text-right{
         margin-top: 20px;
     }
-    
-     .flex_inbox-column{
+    .left_img{
+        display: none;
+    }
+    .right_img-img{
+        max-width: 290px;
+        width: 100%;
+    }
+    .flex_inbox-column{
         flex-direction: column;
     }
     .container-image_rotator{
@@ -1243,6 +1254,46 @@ footer{
     }
     .flex_free-column{
         flex-direction: column;
+    }
+    .hiring_title{
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.357143px;
+        color: #2B292D;    
+    }
+    .hiring_text{
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        color: #2B292D;
+    }
+    .button_long{
+        max-width: 290px;
+        width: 100%;
+        margin: 30px auto 39px;
+    }
+    .hiring_items{
+        max-width: 290px;
+        height: 140px;
+        margin: 0 auto 15px;
+        box-sizing: border-box;
+        padding: 26px 25px;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        border-radius: 8px;
+    }
+    .hiring_items-pretitle{
+        width: 199px;
+        font-size: 22px;
+        line-height: 28px;
+        color: #2B292D;
+        }
+    .hiring_items-text{
+        max-width: 199px;
+        height: 26px;
+        font-size: 16px;
+        line-height: 22px;
+        rgba(43, 41, 45, 0.6)
     }
     .free{
         padding: 0;
