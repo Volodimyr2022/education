@@ -740,12 +740,29 @@ footer{
 .footer_li{
     margin-bottom: 15px;
 }
+.fuuter_li-text:hover{
+    cursor: pointer;
+    transition: 300ms;
+}
+.footer_li-text{
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+    text-decoration: none;
+}
 .footer_media{
     padding: 15px 0;
 }
-/* .footer_media-li:not(:last-of-type){
-    margin-right: 10px;
-} */
+.footer_media{
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+    text-decoration: none;
+}
+.footer_media:hover{
+    cursor: pointer;
+    transition: 300ms;
+}
 .footer_img:not(:last-of-type){
     margin-right: 10px;
 }
