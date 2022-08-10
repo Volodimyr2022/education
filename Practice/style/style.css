@@ -164,9 +164,9 @@ button:hover{
     color: #3142C6;
     border-bottom: 3px solid #3142C6;
 }
-/* .change_color-line{
-    
-} */
+.change_color-icon{
+    fill: #3142C6;
+} 
 .find_block{
     max-width: 459px;
     height: 90px;
