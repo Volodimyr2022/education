@@ -208,7 +208,14 @@ button:hover{
     color: #3142C6;
     margin-bottom: 28px;
 }
-
+.template_pretitle-green{
+    color: #009B4D;
+    margin-bottom: 28px;
+}
+.template_pretitle-orange{
+    color: #F1592B;
+    margin-bottom: 28px;
+}
 .pattern_pretitle{
     font-size: 22px;
     line-height: 34px;
@@ -527,13 +534,35 @@ button:hover{
     text-align: center;
     box-sizing: border-box;      
 }
+.carusel_text-red{
+    color: red;
+    margin: 28px auto 34px;
+    max-width: 750px;
+    height: 102px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    box-sizing: border-box
+}
+.carusel_text-blue{
+    color: blue;
+    margin: 28px auto 34px;
+    max-width: 750px;
+    height: 102px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    box-sizing: border-box
+}
 .airbulb_img{
     position: absolute;
     right: 0;
     bottom: 0;
 }
 .carusel_director{
-    margin: 34px auto 112px;
+    margin: 34px auto 38px;
     /* max-width: 225px; */
     text-align: center;
 }
@@ -618,11 +647,11 @@ button:hover{
 .hiring_items-text{
     font-size: 18px;
     line-height: 24px;
-    rgba(43, 41, 45, 0.6)
+    color:rgba(43, 41, 45, 0.6);
 }
 .free{
     padding: 72px 0 180px;
-    background-color: #F4F5F7;;
+    background-color: #F4F5F7;
 }
 .free_img{
     margin-right: 100px;
@@ -1020,6 +1049,10 @@ footer{
     .item:nth-child(7){
         display: none;
     }
+    .airbulb_img{
+        position: static;
+        margin: 51px auto 87px;
+    }
     .free{
         padding: 76px auto 62px;
     }
@@ -1097,12 +1130,14 @@ footer{
 
     .container{
         max-width: 290px;
-
+    }
+    .menu-all{
+        z-index: 2;  
     }
     .header{
         background-color: #fff;
         padding: 8px 0;
-    }
+    }    
     .logo img {
         margin-right: 13px;
      }
