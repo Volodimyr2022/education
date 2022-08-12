@@ -527,7 +527,6 @@ button:hover{
 .carusel_text{
     margin: 28px auto 34px;
     max-width: 750px;
-    height: 102px;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
@@ -538,23 +537,21 @@ button:hover{
     color: red;
     margin: 28px auto 34px;
     max-width: 750px;
-    height: 102px;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
     text-align: center;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 .carusel_text-blue{
     color: blue;
     margin: 28px auto 34px;
     max-width: 750px;
-    height: 102px;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
     text-align: center;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 .airbulb_img{
     position: absolute;
@@ -670,8 +667,8 @@ button:hover{
 }
 
 .free_text{
-    width: 555px;
-    height: 64px;
+    max-width: 555px;
+    /* height: 64px; */
     font-size: 22px;
     line-height: 32px;
     padding-bottom: 26px;
@@ -734,9 +731,6 @@ button:hover{
     line-height: 22px;
     margin-right: 20px;
 }
-footer{
-       padding: 43px 0 15px;
-}
 .footer_nav{
     margin-bottom: 59px;
     position: relative;
@@ -775,7 +769,7 @@ footer{
 }
 .footer_ul{
     width: 265px;
-    height: 185px;
+    /* height: 185px; */
 }
 .footer_li{
     margin-bottom: 15px;
@@ -840,14 +834,21 @@ footer{
     right: 40px;
     cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 1040px;
+    } 
+    .right_img{
+        position: static;
+    }
+    .airbulb_img{
+        position: static;
+        margin: 30px auto 30px;
+    }
 @media screen and (max-width: 1090px) {
     .container{
         max-width: 750px;
     } 
-    /* .header_nav{
-        display: none;
-    } */
-
     .check{
         width: 30px;
         height: 3px;
@@ -923,7 +924,6 @@ footer{
     .main_container > div:last-of-type{
         z-index: 0;
         position: static;
-        /* right: 25px; */
     }   
     .main_img{
         width: 620px;
@@ -946,7 +946,6 @@ footer{
         padding: 25px 0 41px;
         align-items: center;
         justify-items: center;
-        gap: 37px 120px;
     }
     .right_img{
         position: static;
@@ -1125,14 +1124,105 @@ footer{
         display: none;
     }
 }
+@media screen and (max-width: 800px) {
 
+    .container{
+        max-width: 500px;
+    }
+    .right_img-img{
+        max-width: 500px;
+        width: 100%;
+    }
+@media screen and (max-width: 550px) {
+
+    .container{
+        max-width: 430px;
+    }
+    
+    .main_img-img{
+        max-width: 430px;
+        width: 100%;
+        /* height: 180px;   */
+     }
+     .right_img-img{
+        max-width: 430px;
+        width: 100%;
+    }
+    .free_text{
+        max-width: 430px;
+        width: 100%;
+    }
+@media screen and (max-width: 480px) {
+
+    .container{
+        max-width: 310px;
+    }
+    .main_img{
+        max-width: 310px;
+        width: 100%; 
+     } 
+     .grid_image{
+        max-width: 310px;
+        width: 100%;
+    }
+    .container-image_rotator{
+        max-width: 310px;
+        width: 100%;  
+    }  
+    .container-image_phone{
+        max-width: 310px;
+        width: 100%;  
+    } 
+    .template_text{
+        max-width: 310px;
+    }
+    @media screen and (max-width: 360px) {
+
+        .container{
+            max-width: 310px;
+        } 
+        .main_title{
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: -0.3125px;
+            color: #2B292D;
+            margin-bottom: 24px;
+            max-width: 310px;
+            width: 100%;   
+         }
+        .main_img{
+            max-width: 310px;
+            width: 100%; 
+         } 
+        .grid_image{
+            max-width: 310px;
+            width: 100%;
+        }
+        .container-image_rotator{
+            max-width: 310px;
+            width: 100%;  
+        }  
+        .container-image_phone{
+            max-width: 310px;
+            width: 100%;  
+        } 
+        .template_text{
+            max-width: 310px;
+        }
+    }    
 @media screen and (max-width: 320px) {
 
     .container{
         max-width: 290px;
     }
-    .menu-all{
-        z-index: 2;  
+    .checkbox_header:checked ~ .menu-all{
+        z-index: 3;  
+    }
+    .check-wrapper{
+        z-index: 4;
+    }
+    .checkbox_header{
+        z-index: 5;
     }
     .header{
         background-color: #fff;
@@ -1211,7 +1301,6 @@ footer{
         margin-bottom: 32px;
     }
     .grid_image{
-        gap: 0;
         max-width: 290px;
         width: 100%;
     }
