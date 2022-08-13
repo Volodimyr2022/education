@@ -845,6 +845,7 @@ button:hover{
         position: static;
         margin: 30px auto 30px;
     }
+}    
 @media screen and (max-width: 1090px) {
     .container{
         max-width: 750px;
@@ -874,7 +875,7 @@ button:hover{
         top: 0;
         right: 0;
         opacity: 0;   
-        z-index: 2;  
+        z-index: 5;  
     }
     .check{
         transition: 300ms;
@@ -907,13 +908,14 @@ button:hover{
         right: 0;
         text-align: center;
         padding-top: 40px;
+        z-index: 3;
     }
     .flex_menu{
         flex-direction: column;
     }
     .check-wrapper{
         position: relative;
-        z-index: 1;
+        z-index: 4;
     }
     .main{      
         padding-bottom: 0;
@@ -1133,6 +1135,7 @@ button:hover{
         max-width: 500px;
         width: 100%;
     }
+}
 @media screen and (max-width: 550px) {
 
     .container{
@@ -1142,8 +1145,7 @@ button:hover{
     .main_img-img{
         max-width: 430px;
         width: 100%;
-        /* height: 180px;   */
-     }
+    }
      .right_img-img{
         max-width: 430px;
         width: 100%;
@@ -1152,6 +1154,7 @@ button:hover{
         max-width: 430px;
         width: 100%;
     }
+}
 @media screen and (max-width: 480px) {
 
     .container{
@@ -1161,9 +1164,9 @@ button:hover{
         max-width: 310px;
         width: 100%; 
      } 
-     .grid_image{
+     .apple_img{
         max-width: 310px;
-        width: 100%;
+        width: 100%;    
     }
     .container-image_rotator{
         max-width: 310px;
@@ -1176,53 +1179,45 @@ button:hover{
     .template_text{
         max-width: 310px;
     }
-    @media screen and (max-width: 360px) {
+}
+@media screen and (max-width: 360px) {
 
-        .container{
-            max-width: 310px;
-        } 
-        .main_title{
-            font-size: 50px;
-            line-height: 50px;
-            letter-spacing: -0.3125px;
-            color: #2B292D;
-            margin-bottom: 24px;
-            max-width: 310px;
-            width: 100%;   
-         }
-        .main_img{
-            max-width: 310px;
-            width: 100%; 
-         } 
-        .grid_image{
-            max-width: 310px;
-            width: 100%;
-        }
-        .container-image_rotator{
-            max-width: 310px;
-            width: 100%;  
-        }  
-        .container-image_phone{
-            max-width: 310px;
-            width: 100%;  
-        } 
-        .template_text{
-            max-width: 310px;
-        }
-    }    
+    .container{
+        max-width: 310px;
+    } 
+    .main_title{
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.3125px;
+        color: #2B292D;
+        margin-bottom: 24px;
+        max-width: 310px;
+        width: 100%;   
+     }
+    .main_img{
+        max-width: 310px;
+        width: 100%; 
+    } 
+    .apple_img{
+        max-width: 310px;
+        width: 100%;    
+    }
+    .container-image_rotator{
+        max-width: 310px;
+        width: 100%;  
+    }  
+    .container-image_phone{
+        max-width: 310px;
+        width: 100%;  
+    } 
+    .template_text{
+        max-width: 310px;
+    }
+}    
 @media screen and (max-width: 320px) {
 
     .container{
         max-width: 290px;
-    }
-    .checkbox_header:checked ~ .menu-all{
-        z-index: 3;  
-    }
-    .check-wrapper{
-        z-index: 4;
-    }
-    .checkbox_header{
-        z-index: 5;
     }
     .header{
         background-color: #fff;
@@ -1300,12 +1295,9 @@ button:hover{
     .container-image{    
         margin-bottom: 32px;
     }
-    .grid_image{
-        max-width: 290px;
-        width: 100%;
-    }
     .apple_img{
         max-width: 100%;
+        width: 100%;
     }
     .inbox{
         padding: 50px 0 48px;
@@ -1450,7 +1442,7 @@ button:hover{
         height: 26px;
         font-size: 16px;
         line-height: 22px;
-        rgba(43, 41, 45, 0.6)
+        color:  rgba(43, 41, 45, 0.6);
     }
     .free{
         padding: 0;
