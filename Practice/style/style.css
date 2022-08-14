@@ -647,7 +647,7 @@ button:hover{
     color:rgba(43, 41, 45, 0.6);
 }
 .free{
-    padding: 72px 0 180px;
+    padding: 72px 0 72px;
     background-color: #F4F5F7;
 }
 .free_img{
@@ -833,6 +833,28 @@ button:hover{
     top: 20px;
     right: 40px;
     cursor: pointer;
+}
+#up{
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 100px;
+    right: 50px;
+    background-color: #F3C6BD;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+#up span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: rotate(-90deg) translate(70%, -30%);
 }
 @media screen and (max-width: 1200px) {
     .container{
@@ -1053,9 +1075,10 @@ button:hover{
     .airbulb_img{
         position: static;
         margin: 51px auto 87px;
+        text-align: center;
     }
     .free{
-        padding: 76px auto 62px;
+        padding: 76px 0 62px;
     }
     .flex_free-column{
         flex-direction: column-reverse;
@@ -1085,6 +1108,9 @@ button:hover{
         width: 431px;
         height: 43px; 
         margin-bottom: 13px;
+    }
+    .free_img{
+        margin: 0 auto;
     }
     .footer {
         max-width: 343px;
@@ -1172,10 +1198,33 @@ button:hover{
         max-width: 310px;
         width: 100%;  
     }  
+    .grid_picture{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        gap: 15px;
+     }
     .container-image_phone{
         max-width: 310px;
         width: 100%;  
     } 
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 17px;
+    }
+    .item:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+    .item:nth-child(4){
+        grid-row: 2/4;
+    }
+    .item:nth-child(7){
+        display: none;
+    }
+    .item:nth-child(2){
+        display: none;
+    }
     .template_text{
         max-width: 310px;
     }
@@ -1206,10 +1255,36 @@ button:hover{
         max-width: 310px;
         width: 100%;  
     }  
+    .grid_picture{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        gap: 15px;
+     }
     .container-image_phone{
         max-width: 310px;
         width: 100%;  
     } 
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        gap: 17px;
+    }
+    .item:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+    .item:nth-child(4){
+        grid-row: 2/4;
+    }
+    .item:nth-child(7){
+        display: none;
+    }
+    .item:nth-child(2){
+        display: none;
+    }
+    .flex_free-column{
+        flex-direction: column;
+    }
     .template_text{
         max-width: 310px;
     }
