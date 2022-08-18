@@ -91,7 +91,7 @@ body{
     background-color: #10375C;
     position: absolute;
     left: 140px;
-    top: 296px
+    top: 0px
 }
 .form_text{
     width: 333px;
@@ -135,4 +135,45 @@ body{
     color: #FFFFFF;
     background-color: #FF5722;
     margin: 5px 42px 31px 40px;
+}
+.space_title{
+    width: 216px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    color: #10375C;
+}
+.space_text{
+    width: 452px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #9A9A9A;
+    margin-bottom: 56px;
+}
+.space_li:not(last-of-type){
+    margin-right: 13px;
+}
+.item{
+    width: 72px;
+    height: 72px;
+    background-color: #FF5722;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.work_icon{
+    color: #FFFFFF;
+    position: absolute;
+    left: 31px;
+    bottom: 28px;
+}
+.work_block{
+    position: relative;
+}
+.work_text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222831;
 }
