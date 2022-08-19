@@ -159,7 +159,14 @@ body{
 .space_li:not(last-of-type){
     margin-right: 13px;
 }
-.item{
+.work{
+    position: relative;
+    margin: 0 auto 0;
+}
+.work_nav{
+    position: relative;
+}
+.work_ground{
     width: 72px;
     height: 72px;
     background-color: #FF5722;
@@ -171,7 +178,7 @@ body{
     color: #FFFFFF;
     position: absolute;
     left: 31px;
-    bottom: 28px;
+    bottom: 26px;
 }
 .work_block{
     position: relative;
@@ -181,4 +188,64 @@ body{
     font-size: 20px;
     line-height: 24px;
     color: #222831;
+}
+.private{
+    position: relative;
+}
+.privat_item{
+    width: 350px;
+    height: 419px;
+    background-color: #10375C;
+    position: absolute;
+}
+
+.private_title{
+    width: 201px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 130px;
+    left: 75px;
+    text-align: center;
+}
+.private_text{
+    width: 253px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 178px;
+    left: 55px;
+}
+.private_ground{
+    width: 255px;
+    height: 65px;
+    background-color: #FF5722;
+    position: absolute;
+    left: 0;
+    top: 354px;
+}
+.private_nav{
+    position: relative;
+}
+.private_text-nav{
+    width: 129px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 53px;
+    top: 376px;
+}
+.private_icon{
+    color: #FFFFFF;
+    position: absolute;
+    left: 214px;
+    top: 380px;
 }
