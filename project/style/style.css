@@ -14,6 +14,9 @@ body{
 .header{
     margin: 65px 0;
 }
+.nav{
+    margin-right: 81px;
+}
 .nav_li{
     display: inline-block;
 }
@@ -42,6 +45,9 @@ body{
     color: #FFFFFF;
     background: #FF5722;
     box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+}
+.checkbox_header, .check-wrapper{
+    display: none;
 }
 .flex_start{
     justify-content: flex-start;
@@ -83,6 +89,9 @@ body{
 .intro_img{
     text-align: end;
     margin-right: -130px;
+}
+.intro_img-img{       
+    box-shadow: 0px 5px #E5E5E5;
 }
 .intro_form{
     width: 445px;
@@ -513,7 +522,7 @@ body{
 .rev_color{
     background-color: #fff;
 }
-.how-rotate-icon{
+.how_rotate-icon{
     color: #FF5722;
     transform: rotate(-90deg);
 }
@@ -576,6 +585,7 @@ body{
     max-width: 350px;
     height: 320px;
     position: relative;
+
 }
 .news_img-text{
     max-width: 318px;
@@ -696,4 +706,75 @@ body{
     color: #FFFFFF;
     margin-bottom: 9px;
     text-decoration: none;
+}
+@media screen and (max-width: 1090px) {
+    .container{
+        max-width: 750px;
+    } 
+    .check{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+    }
+    .check:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    .checkbox_header, .check_wrapper{
+        display: block;
+    }
+    .menu_all{
+        display: none;
+    }
+    .menu{
+        position: relative;
+    }
+    .checkbox_header{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 5;
+    }
+    .check{
+        transition: 300ms;
+    }
+    .checkbox_header:checked ~ .check_wrapper > .check:first-of-type{
+        transform: rotate(45deg) translate(10px, 10px);   
+    }
+    .checkbox_header:checked ~ .check_wrapper > .check:nth-child(2){
+        opacity: 0;   
+    }
+    .checkbox_header:checked ~ .check_wrapper > .check:last-of-type{
+        transform: rotate(-45deg) translate(0px, 3px);   
+    }
+    .header_ul{
+        margin-right: 0px;
+    }
+    .header_li:not(:last-of-type){
+        margin-right: 0px;
+    }
+    .header_li{
+        margin-bottom: 20px;
+    }
+    .checkbox_header:checked ~ .menu_all{
+        display: block;
+        position: fixed;
+        background-color: rgb(36, 230, 223);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        z-index: 3;
+    }
+    .flex_menu{
+        flex-direction: column;
+    }
+    .check_wrapper{
+        position: relative;
+        z-index: 4;
+    }
 }

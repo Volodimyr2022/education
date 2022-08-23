@@ -12,9 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family= Lora:wght@700 &family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="./style/style.css"> 
-    <link rel="stylesheet" href="./style/carusel.css">  
+    <!-- <link rel="stylesheet" href="./style/carusel.css">   -->
 </head>
 <body>
     <header class="header">
@@ -22,19 +24,33 @@
             <div>
                 <img src="./img/header/logo.svg" alt="logo">
             </div>
-            <nav class="nav">
-                <ul class="nav_ul">
-                    <li class="nav_li"><a class="nav_link" href="">Home</a></li>
-                    <li class="nav_li"><a class="nav_link" href="">Workspace</a></li>
-                    <li class="nav_li"><a class="nav_link" href="">Service</a></li>
-                    <li class="nav_li"><a class="nav_link" href="">Events</a></li>
-                    <li class="nav_li"><a class="nav_link" href="">Reviews</a></li>
-                    <li class="nav_li"><a class="nav_link" href="">Contact Us</a></li>
-                </ul>
-            </nav>
             <div>
-                <a class="header_link" href="">Log In</a>
-                <button class="header_button">Sign Up</button>
+                <nav class="header_nav flex">
+                    <div class="menu">
+                        <input type="checkbox" class="checkbox_header">
+                        <div class="check_wrapper">
+                            <div class="check"></div>
+                            <div class="check"></div>
+                            <div class="check"></div>
+                        </div>
+                        <div class="menu_all flex">
+                            <nav class="nav">
+                                 <ul class="nav_ul flex_menu">
+                                    <li class="nav_li"><a class="nav_link" href="">Home</a></li>
+                                    <li class="nav_li"><a class="nav_link" href="">Workspace</a></li>
+                                    <li class="nav_li"><a class="nav_link" href="">Service</a></li>
+                                    <li class="nav_li"><a class="nav_link" href="">Events</a></li>
+                                    <li class="nav_li"><a class="nav_link" href="">Reviews</a></li>
+                                    <li class="nav_li"><a class="nav_link" href="">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                            <div>
+                                <a class="header_link" href="">Log In</a>
+                                <button class="header_button">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>               
             </div>
         </div>
     </header>
@@ -56,17 +72,17 @@
                 </div>
                 <form class="intro_form">
                     <p class="form_text">Find your space now</p>
-                    <div class="input_wrapper">
-                        <input class="input" id="name" type="text" placeholder="Name">
-                        <label class="label" for="name">Maria</label>
+                    <div class="input_wrapper">   
+                        <input class="input" id="name" type="text" placeholder="Maria">
+                        <label class="label" for="name">Name</label>
                     </div>
                     <div class="input_wrapper">
-                        <input class="input" id="tel" type="tel" placeholder="Telephone">
-                        <label class="label" for="tel">38000000000</label>
+                        <input class="input" id="tel" type="tel" placeholder="38000000000">
+                        <label class="label" for="tel">Telephone</label>
                     </div>
                     <div class="input_wrapper">
-                        <input class="input" id="email" type="email" placeholder="Email">
-                        <label class="label" for="email">email@gmail.com</label>
+                        <input class="input" id="email" type="email" placeholder="email@gmail.com">
+                        <label class="label" for="email">Email</label>
                     </div>
                     <div>
                         <button class="form_button">
@@ -464,8 +480,10 @@
         </div>    
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script src="./script/bxslider.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="./script/bxslider.js"></script> -->
   <script src="./script/script.js"></script>
+  <script src="./script/carusel.js"></script>
 </body>
 </html>
