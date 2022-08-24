@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family= Lora:wght@700 &family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="./style/style.css"> 
     <!-- <link rel="stylesheet" href="./style/carusel.css">   -->
 </head>
@@ -45,8 +45,8 @@
                                 </ul>
                             </nav>
                             <div>
-                                <a class="header_link" href="">Log In</a>
-                                <button class="header_button">Sign Up</button>
+                                <div class="header_nav"><a class="header_link" href="">Log In</a></div>
+                                <div class="header_nav"><button class="header_button">Sign Up</button></div>
                             </div>
                         </div>
                     </div>
@@ -108,33 +108,36 @@
             <div class="carusel">
                 <div class="work">
                     <div class="work_block">
-                        <div>
-                            <img src="./img/space/work.png" alt="">
-                        </div>
                         <div class="work_nav">
-                            <p class="work_icon">></p>
-                        </div>
-                    </div>
+                            <div>
+                            <img src="./img/space/work.png" alt="">
+                            </div>
+                            <div class="work_color"></div>
+                             <p class="work_icon">></p>
+                        </div>                            
                     <p class="work_text">Working with team</p>
                 </div>
                 <div class="private">
-                    <div class="privat_item"></div>
-                    <p class="private_title">Private Space</p>
-                    <p class="private_text">Comfortable space, Full speed wifi, Free coffe & Snack 
-                        and many more</p>
-                    <div class="private_nav">
-                        <p class="private_text-nav">Check avaibility</p>
-                        <p class="private_icon">></p>
-                    </div>
+                    <!-- <div class="private_block"> -->
+                        <div class="private_item"></div>
+                        <p class="private_title">Private Space</p>
+                        <p class="private_text">Comfortable space, Full speed wifi, Free coffe & Snack 
+                            and many more</p>
+                        <div class="private_nav">
+                            <p class="private_text-nav">Check avaibility</p>
+                            <p class="private_icon">></p>
+                        </div>
+                    <!-- </div>     -->
                 </div>
                 <div class="work">
                     <div class="work_block">
-                        <div>
-                            <img src="./img/space/custom.png" alt="">
-                        </div>
                         <div class="work_nav">
-                            <p class="work_icon">></p>
-                        </div>
+                            <div>
+                            <img src="./img/space/custom.png" alt="">
+                            </div>
+                            <div class="work_color"></div>
+                             <p class="work_icon">></p>
+                        </div>                            
                     </div>
                     <p class="work_text">Custom Office</p>
                 </div>   
@@ -143,7 +146,7 @@
         </div>
     </section>
     <section class="why">
-        <div class="container flex">
+        <div class="container flex flex_why-column">
             <div class="container_support grid_support">
                 <div class="item">
                     <img class="item_support" src="./img/why/Meeting Room.svg" alt="" >
@@ -183,7 +186,7 @@
                 </div> 
                 <p class="our_title">All facilities are designed to meet all your needs</p>   
             </div>
-            <div class="our_block flex">
+            <div class="our_block flex flex_why-column">
                 <div class="our_nav flex-our">
                     <p class="our_text">Spacious parking area</p>
                     <p class="our_text">Comfortable spaces</p>
@@ -229,26 +232,28 @@
         </div>
     </section>
     <section class="who">
-        <p class="who_title">Who uses Frispes?</p>
-        <p class="who_text">Big brands, small bussiness, new startuo and inividuals</p>
-        <div class="grid_who">
-            <div class="who_item">
-                <img class="who_item-img" src="./img/who/google.svg" alt="">
-            </div>
-            <div class="who_item">
-                <img class="who_item-img" src="./img/who/tokopedia.svg" alt="">
-            </div>
-            <div class="who_item">
-                <img class="who_item-img" src="./img/who/upwork.svg" alt="">
-            </div>
-            <div class="who_item">
-                <img class="who_item-img" src="./img/who/microsoft.svg" alt="">
-            </div>
-            <div class="who_item">
-                <img class="who_item-img" src="./img/who/shoppify.svg" alt="">
-            </div>
-            <div class="who_item">
-                <img class="who_item-img" src="./img/who/stripe.svg" alt="">
+        <div class="container"></div>
+            <p class="who_title">Who uses Frispes?</p>
+            <p class="who_text">Big brands, small bussiness, new startuo and inividuals</p>
+            <div class="grid_who">
+                <div class="who_item">
+                    <img class="who_item-img" src="./img/who/google.svg" alt="">
+                </div>
+                <div class="who_item">
+                    <img class="who_item-img" src="./img/who/tokopedia.svg" alt="">
+                </div>
+                <div class="who_item">
+                    <img class="who_item-img" src="./img/who/upwork.svg" alt="">
+                </div>
+                <div class="who_item">
+                    <img class="who_item-img" src="./img/who/microsoft.svg" alt="">
+                </div>
+                <div class="who_item">
+                    <img class="who_item-img" src="./img/who/shoppify.svg" alt="">
+                </div>
+                <div class="who_item">
+                    <img class="who_item-img" src="./img/who/stripe.svg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -384,16 +389,18 @@
     </section>
     <section class="became">
         <div class="container">
-            <div class="became_pretitle flex flex_start">
-                <p class="became_pretitle-text">Became a member</p>
-                <div class="became_line"></div>
-            </div>
-            <p class="became_title">Ready to try different work experience now?</p>
-            <p class="became_text">Get the best working experience that you never feel before</p>
-            <div>
-                <button class="became_button">
-                    SIGN UP NOW
-                </button>
+            <div class="became_main">
+                <div class="became_pretitle flex flex_start">
+                    <p class="became_pretitle-text">Became a member</p>
+                    <div class="became_line"></div>
+                </div>
+                <p class="became_title">Ready to try different work experience now?</p>
+                <p class="became_text">Get the best working experience that you never feel before</p>
+                <div>
+                    <button class="became_button">
+                        SIGN UP NOW
+                    </button>
+                </div>
             </div>
             <div class="became_img">
                 <img class="became_img-img" src="./img/became/man.png" alt="">
@@ -401,7 +408,7 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="container flex ">
+        <div class="container flex flex_footer-start">
             <div class="footer_main">
                 <p class="footer_title">Frispes</p>
                 <p class="footer_text">We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your best workspaces and meetings</p>
@@ -481,7 +488,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <!-- <script src="./script/bxslider.js"></script> -->
   <script src="./script/script.js"></script>
   <script src="./script/carusel.js"></script>

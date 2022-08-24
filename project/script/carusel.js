@@ -1,1 +1,3 @@
-$('.carusel').slick();
+$('.carusel').slick({  
+    dots: true,
+})

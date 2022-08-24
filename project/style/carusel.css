@@ -4,8 +4,8 @@
     box-shadow: none;
     border: none;
     background: #fff;
-    /* text-align: center;
-    margin: 0 auto; */
+    text-align: center;
+    margin: 0 auto;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
     background: #DFDFDF;

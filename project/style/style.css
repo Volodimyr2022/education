@@ -17,7 +17,7 @@ body{
 .nav{
     margin-right: 81px;
 }
-.nav_li{
+.nav_li, .header_nav{
     display: inline-block;
 }
 .nav_li:not(:last-of-type){
@@ -172,7 +172,9 @@ body{
     margin: 0 auto 0;
 }
 .work_nav{
-    
+    position: relative;
+}
+.work_color{   
     width: 72px;
     height: 72px;
     background-color: #FF5722;
@@ -186,9 +188,6 @@ body{
     left: 31px;
     bottom: 26px;
 }
-.work_block{
-    position: relative;
-}
 .work_text{
     font-weight: 700;
     font-size: 20px;
@@ -198,11 +197,10 @@ body{
 .private{
     position: relative;
 }
-.privat_item{
+.private_item{
     width: 350px;
     height: 419px;
     background-color: #10375C;
-    position: absolute;
 }
 
 .private_title{
@@ -211,10 +209,10 @@ body{
     font-size: 32px;
     line-height: 41px;
     color: #FFFFFF;
-    position: absolute;
     top: 130px;
     left: 75px;
     text-align: center;
+    position: absolute;
 }
 .private_text{
     width: 253px;
@@ -396,6 +394,9 @@ body{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 0 auto 112px;
+}
+.who_item{
+    text-align: center;
 }
 .reviews{
     margin-bottom: 149px;
@@ -620,9 +621,6 @@ body{
     position: relative;
     border: none;
 }
-.became_main{
-    margin-right: 250px;
-}
 .became_pretitle-text{
     max-width: 163px;
     margin right: 15px;
@@ -666,12 +664,15 @@ body{
 .became_img{
     position: absolute;
     bottom: 0px;
-    left: 860px
+    left: 60%;
 }
 .footer{
     background: #0D2C4A;
     padding: 56px 0 102px;
     border: none;
+}
+.flex_footer-start{
+    align-items: start;
 }
 .footer_title{
     max-width: 181px;
@@ -770,11 +771,38 @@ body{
         text-align: center;
         z-index: 3;
     }
-    .flex_menu{
-        flex-direction: column;
-    }
     .check_wrapper{
         position: relative;
         z-index: 4;
+    }
+    .nav{
+        margin-right: 0px;
+    }
+    .nav_li{
+        display: block;
+        margin-top: 40px;
+        margin-right: 0px;
+    }
+    .header_nav{
+        display: block;
+        margin-top: 40px;
+    }
+    .intro_img-img{
+        max-width: 750px;
+    }
+    .flex_why-column{
+        flex-direction: column; 
+    }
+    .grid_who{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 750px;
+        margin: 0 auto 112;
+    }
+    .grid_news{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 750px;
+        gap: none;
     }
 }
