@@ -171,7 +171,11 @@ body{
     position: relative;
     margin: 0 auto 0;
 }
+.work_img{
+    margin: 0 auto;
+}
 .work_nav{
+    max-width: 390px;
     position: relative;
 }
 .work_color{   
@@ -179,7 +183,7 @@ body{
     height: 72px;
     background-color: #FF5722;
     position: absolute;
-    left: 0;
+    left: 200;
     bottom: 0;
 }
 .work_icon{
@@ -193,6 +197,7 @@ body{
     font-size: 20px;
     line-height: 24px;
     color: #222831;
+    margin-top: 25px;
 }
 .private{
     position: relative;
@@ -368,6 +373,9 @@ body{
     color: #10375C;
     margin: 0 auto 47px;
 }
+.gallery_img-img{
+    margin: 0 auto;
+}
 .flex_center{
     justify-content: center;
 }
@@ -410,10 +418,15 @@ body{
     margin-bottom: 55px;
 }
 .reviews_main{
-    width: 540px;
+    /* width: 540px;
     height: 421px;
-    background-color: #10375C;
+    background-color: #10375C; */
     position: relative;
+}
+.reviews_color{
+    width: 445px;
+    height: 393px;
+    background-color: #10375C;
 }
 .reviews_text{
     max-width: 365px;
@@ -778,10 +791,12 @@ body{
     .nav{
         margin-right: 0px;
     }
+    .nav_li:not(:last-of-type){
+        margin-right: 0px;
+    }
     .nav_li{
         display: block;
         margin-top: 40px;
-        margin-right: 0px;
     }
     .header_nav{
         display: block;
