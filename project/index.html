@@ -12,13 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family= Lora:wght@700 &family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./style/style.css"> 
-    <!-- <link rel="stylesheet" href="./style/carusel.css">   -->
 </head>
 <body>
     <header class="header">
@@ -338,7 +334,7 @@
             <div class="grid_news">
                 <div class="news_img">
                         <div class="news_img-img">
-                            <img src="./img/news/scene.png" alt="">
+                            <img class="block_img" src="./img/news/scene.png" alt="">
                         </div>
                 </div>        
                 <div class="news_img">          
@@ -356,28 +352,28 @@
                 </div>        
                 <div class="news_img">
                     <div class="news_img-img">
-                        <img src="./img/news/comp.png" alt="">
+                        <img class="block_img" src="./img/news/comp.png" alt="">
                     </div>
                     <p class="news_img-text">Minimal workspace for inspirations</p>
                     <p class="news_img-name">Anthony Masional</p>
                 </div>
                 <div class="news_img">
                     <div class="news_img-img">
-                        <img src="./img/news/working.png" alt="">
+                        <img class="block_img" src="./img/news/working.png" alt="">
                     </div>
                     <p class="news_img-text">Does productivity increase when working remotely ? </p>
                     <p class="news_img-name">Franck Martin</p>
                 </div>
                 <div class="news_img">
                     <div class="news_img-img">
-                        <img src="./img/news/team.png" alt="">
+                        <img class="block_img" src="./img/news/team.png" alt="">
                     </div>
                     <p class="news_img-text">Morning routine to boost your mood</p>
                     <p class="news_img-name">Elizabeth swan</p>
                 </div>
                 <div class="news_img">
                     <div class="news_img-img">
-                        <img src="./img/news/room.png" alt="">
+                        <img class="block_img" src="./img/news/room.png" alt="">
                     </div>
                     <p class="news_img-text">5+ tips to find comfortable co-working space</p>
                     <p class="news_img-name">Mykola Ilschenko</p>
@@ -484,13 +480,13 @@
             </div>
         </div>    
     </footer>
+    <div id="up">
+        <span>></span>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
-  <!-- <script src="./script/bxslider.js"></script> -->
-  <script src="./script/script.js"></script>
-  <script src="./script/carusel.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/carusel.js"></script>
+    <script src="./script/upButton.js"></script>
 </body>
 </html>

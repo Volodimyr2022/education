@@ -37,7 +37,7 @@ body{
     margin-right: 23px;
 }
 .header_button{
-    width: 103px;
+    max-width: 103px;
     height: 43px;
     border: none;
     font-weight: 700;
@@ -94,7 +94,7 @@ body{
     box-shadow: 0px 5px #E5E5E5;
 }
 .intro_form{
-    width: 445px;
+    max-width: 445px;
     height: 459px;
     background-color: #10375C;
     position: absolute;
@@ -102,7 +102,7 @@ body{
     top: 80px
 }
 .form_text{
-    width: 333px;
+    max-width: 333px;
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -112,7 +112,7 @@ body{
 .input_wrapper{
     position: relative;
     margin: 0px 40px 17px;
-    width: 365px;
+    max-width: 365px;
     height: 68px;
     background-color:#0D2C4A;
     border: none;
@@ -135,7 +135,7 @@ body{
     top: 34px;
 }
 .form_button{
-    width: 363px;
+    max-width: 363px;
     height: 53px;
     font-weight: 700;
     font-size: 18px;
@@ -151,14 +151,14 @@ body{
     margin-bottom: 56px;
 }
 .space_title{
-    width: 216px;
+    max-width: 216px;
     font-weight: 700;
     font-size: 40px;
     line-height: 51px;
     color: #10375C;
 }
 .space_text{
-    width: 452px;
+    max-width: 452px;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -206,13 +206,13 @@ body{
     position: relative;
 }
 .private_item{
-    width: 350px;
+    max-width: 350px;
     height: 419px;
     background-color: #10375C;
 }
 
 .private_title{
-    width: 201px;
+    max-width: 201px;
     font-weight: 400;
     font-size: 32px;
     line-height: 41px;
@@ -223,7 +223,7 @@ body{
     position: absolute;
 }
 .private_text{
-    width: 253px;
+    max-width: 253px;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -242,7 +242,7 @@ body{
     top: 354px;
 }
 .private_text-nav{
-    width: 129px;
+    max-width: 129px;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -263,13 +263,13 @@ body{
 }
 .grid_support{
     margin: 44px 71px 44px 0;
-    width: 499px;
+    max-width: 499px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 64px 124px;
 }
 .why_main{
-    width: 540px;
+    max-width: 540px;
     height: 421px;
     position: relative;
     background-color: #10375C;
@@ -286,7 +286,7 @@ body{
     color: #FFFFFF
 }
 .line_why{
-    width: 73px;
+    max-width: 73px;
     height: 2px;
     background: white;
 }
@@ -333,7 +333,7 @@ body{
     flex-direction: column;
 }
 .our_text{
-    width: 293px;
+    max-width: 293px;
     height: 72px;
     border: none;
     background-color: #fff;
@@ -420,9 +420,6 @@ body{
     margin-bottom: 55px;
 }
 .reviews_main{
-    /* width: 540px;
-    height: 421px;
-    background-color: #10375C; */
     position: relative;
 }
 .reviews_color{
@@ -440,7 +437,6 @@ body{
     position: absolute;
     top: 47px;
     left: 40px;
-    /* margin: 47px auto 94px; */
 }
 .reviews_member{
     position: absolute;
@@ -599,7 +595,6 @@ body{
 }
 .news_img{
     max-width: 350px;
-    height: 320px;
     position: relative;
 
 }
@@ -645,7 +640,7 @@ body{
     color: #F8F8F8;    
 }
 .became_line{
-    width: 73px;
+    max-width: 73px;
     height: 2px;
     background: #F8F8F8;
     margin-left: 15px;
@@ -667,7 +662,7 @@ body{
     margin-bottom: 23px;      
 }
 .became_button{
-        width: 350px;
+        max-width: 350px;
         height: 53px;
         font-weight: 700;
         font-size: 18px;
@@ -723,9 +718,32 @@ body{
     margin-bottom: 9px;
     text-decoration: none;
 }
+#up{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 100px;
+    right: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #FF5722;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#up span{
+    display: inline-block;
+    transform: rotate(-90deg);
+}
 @media screen and (max-width: 1200) {
     container{
         max-width: 1040;
+    }
+    .intro_img{
+        margin-right: -80px;
     }
     .intro_img-img{
         max-width: 1040px;
@@ -818,6 +836,9 @@ body{
     .intro_form{
         position: static;
     }
+    .intro_img{
+        margin-right: -170px;
+    }
     .intro_img-img{
         max-width: 750px;
     }
@@ -836,15 +857,27 @@ body{
         max-width: 750px;
         gap: none;
     }
+}
 @media screen and (max-width: 800px) {
     .container{
         max-width: 500px;
     }
+    .flex_intro-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro_title{
+        margin: 20px auto 20px;
+    }
+
     .intro_block{
         position: static;
     }
     .intro_form{
         position: static;
+    }
+    .intro_img{
+        margin-right: -130px;
     }
     .intro_img-img{
         max-width: 500px;
@@ -869,9 +902,11 @@ body{
     }
 }
 @media screen and (max-width: 550px) {
-
     .container{
         max-width: 430px;
+    }
+    .intro_img{
+        margin-right: -60px;
     }
     .intro_img-img{
         max-width: 430px;
@@ -911,6 +946,9 @@ body{
     .container{
         max-width: 310px;
     }
+    .intro_img{
+        margin: 20px -85px 20px 0;
+    }
     .intro_img-img{
         max-width: 310px;
     }
@@ -924,54 +962,32 @@ body{
     .intro_form{
         max-width: 310px;
         height: 459px;
-        /* position: absolute;
-        left: 0px;
-        top: 80px */
     }
     .form_text{
         width: 310px;
-        /* font-weight: 700;
-        font-size: 34px;
-        line-height: 44px;
-        color: #FFFFFF; */
         padding: 43px 0 29px;
         margin: 0;
     }
     .input_wrapper{
-        /* position: relative; */
         margin: 7px auto 0px ;
         width: 300px;
-        /* height: 68px;
-        background-color:#0D2C4A;
-        border: none; */
         box-sizing: border-box;
     }
-    /* .input{
-        padding: 8px 0 0 12px;
-        font-weight: 500;
-        line-height: 26px;
-        color: #FFFFFF;
-        background-color:#0D2C4A;
-        border: none;
-    }
-    .label{
-        font-weight: 500;
-        line-height: 26px;
-        color: #FFFFFF;
-        position: absolute;
-        left: 16px;
-        top: 34px;
-    } */
     .form_button{
         width: 300px;
-        /* height: 53px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 28px;
-        color: #FFFFFF;
-        background-color: #FF5722; */
-        margin: 22px auto 31px;
-        
+        margin: 22px auto 31px;       
+    }
+    .gallery_tittle{
+        max-width: 310px;
+    }
+    .who_text{
+        max-width: 310px;
+    }
+    .grid_who{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 310px;
+        margin-bottom: 20px;
+        gap: 10px;
     }
     .our_img-img{
         max-width: 310px;
@@ -981,12 +997,38 @@ body{
 
     .container{
         max-width: 310px;
+    }
+    .intro_img{
+        margin-right: -25px;
+    }
+    .intro_img-img{
+        max-width: 310px;
+    }
+    .why_title{
+        max-width: 310px;
+    }
+    .why_text{
+        max-width: 310px;
     } 
+    .block_img{
+        max-width: 310px;
+    }
 }
 @media screen and (max-width: 320px) {
 
     .container{
         max-width: 290px;
     }
-}              
+    .intro_img{
+        margin-right: -15px;
+    }
+    .block_img{
+        max-width: 290px;
+    }
+    .input_wrapper{
+        max-width: 290px;
+    }
+    .form_button{
+        max-width: 290px;
+    }             
 }
