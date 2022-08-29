@@ -46,7 +46,7 @@ body{
     background: #FF5722;
     box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
 }
-.checkbox_header, .check-wrapper{
+.check-wrapper{
     display: none;
 }
 .flex_start{
