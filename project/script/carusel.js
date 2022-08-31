@@ -6,9 +6,10 @@ $('.carusel-space').slick({
 })
 $('.carusel-gallery').slick({
     Infinity: false,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+    prevArrow: $('.prev-g'),
+    nextArrow: $('.next-g'),
     slidesToShow: 2,
+    slidesToScroll: 2,
     dots: false,
 })
 $('.carusel-reviews').slick({
@@ -16,6 +17,6 @@ $('.carusel-reviews').slick({
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
     slidesToShow: 2,
-    dots: true,
+    dots: false,
 })
 
