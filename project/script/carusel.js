@@ -1,8 +1,10 @@
+
 $('.carusel-space').slick({
     Infinity: false,
+    prevArrow: $('.prev-s'),
+    nextArrow: $('.next-s'),
     slidesToShow: 3,
     dots: true,
-    arrows: false,
 })
 $('.carusel-gallery').slick({
     Infinity: false,
