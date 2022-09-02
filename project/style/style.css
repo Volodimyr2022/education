@@ -46,7 +46,7 @@ body{
     background: #FF5722;
     box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
 }
-.check-wrapper{
+.checkbox_header, .check-wrapper{
     display: none;
 }
 .flex_start{
@@ -163,11 +163,8 @@ body{
     background: #DFDFDF;
     margin-top: 20px;
 }
-.slick-active{
-    /* width: 40px;
-    height: 4px; */
+.slick-dots > .slick-active > button{
     background: #DD2C00;
-    /* margin-top: 20px; */
 }
 .space_title{
     max-width: 216px;
@@ -781,7 +778,7 @@ body{
         margin-bottom: 3px;
     }
     .checkbox_header, .check_wrapper{
-        flex-direction: column-reverse;
+        display: block;
     }
     .menu_all{
         display: none;
