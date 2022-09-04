@@ -1,0 +1,117 @@
+.pricing{
+    background-color: #252B42ff;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    &_title{  
+        margin-bottom: 27px;
+    } 
+    &_text{   
+        margin-bottom: 90px;
+    }
+    &_list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_item{
+        flex: 1;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        color: black;
+        padding: 40px;
+        margin-right: 50px;
+      
+        &:last-child{
+            margin-right: 0;
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 0;
+            margin-bottom: 3px;
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: #374754;
+            max-width: 148px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        &-cost{
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-content{
+                text-align: left;
+                margin-left: 10px;
+            }
+            &-value,
+            &-currency{
+                font-weight: 700;
+                font-size: 74px;
+                letter-spacing: 0.2px;
+                color: #252B42;
+            }
+            &-currency{
+                font-size: 20px;
+            }
+            &-info{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0.1px;
+                color: #374754;
+
+            }
+        }
+        &-list{
+            margin-bottom: 30px;
+        
+            &-name{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                color: #252B42;
+                margin-bottom: 20px;
+                 &:last-child{
+                    margin-bottom: 0;
+                 }
+            }
+        }
+        &--mod{
+            background-color: #2091F9;
+            color: white;
+            padding: 83px 40px;
+            .pricing_item{
+                &-text{
+                    color: #FFFFFF;
+                }           
+                &-cost{
+                    &-value,
+                    &-currency,
+                    &-info{
+                        color:#FFFFFF;
+                    }
+                }
+                &-list{
+                    &-name{
+                        color: #FFFFFF;
+                    }
+                }
+                &-button{
+                    background-color: #fff;
+                    color: #2091F9;
+                }    
+            }            
+        }    
+    }  
+}

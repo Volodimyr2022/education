@@ -1,0 +1,42 @@
+.features{
+
+  &_title{
+    text-align: center;
+    margin: 11px auto 27px;
+  }
+  &_text{
+    margin-bottom: 97px;
+  }
+  &_list{
+    display: flex;
+    margin-bottom: 80px;
+  }
+  &_item{
+    flex: 1;
+    justify-content: center;
+    &-icon{
+        text-align: center;
+        margin-bottom: 27px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #252B42;
+        max-width: 194px;
+        margin: 0 auto 20px;
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 231px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #374754;
+        margin: 0 auto;
+    }
+  }
+}
